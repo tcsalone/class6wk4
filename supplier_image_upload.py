@@ -5,7 +5,7 @@ import sys
 import os
 
 listOfFiles = []
-srcDir = "/home/student-03-b3dd264fea1d/supplier-data/images/"
+srcDir = "/home/student-01-3376cba60dbf/supplier-data/images/"
 url = "http://localhost/upload/"
 
 for (dirpath, dirname, filename) in os.walk(srcDir):
