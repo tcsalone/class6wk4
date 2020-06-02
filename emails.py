@@ -1,4 +1,3 @@
-
 #!/usr/bin/env python3
 
 import email.message
@@ -16,15 +15,15 @@ def generate_email(sender, recipient, subject, body):
   message.set_content(body)
 
   # Process the attachment and add it to the email
-  #attachment_filename = os.path.basename(attachment_path)
-  #mime_type, _ = mimetypes.guess_type(attachment_path)
-  #mime_type, mime_subtype = mime_type.split('/', 1)
+  attachment_filename = os.path.basename("/tmp/processed.pdf")
+  mime_type, _ = mimetypes.guess_type("/tmp/processed.pdf")
+  mime_type, mime_subtype = mime_type.split('/', 1)
 
-  #with open(attachment_path, 'rb') as ap:
-  #  message.add_attachment(ap.read(),
-  #                        maintype=mime_type,
-  #                        subtype=mime_subtype,
-  #                        filename=attachment_filename)
+  with open("/tmp/processed.pdf", 'rb') as ap:
+    message.add_attachment(ap.read(),
+                          maintype=mime_type,
+                          subtype=mime_subtype,
+                          filename=attachment_filename)
 
   return message
 

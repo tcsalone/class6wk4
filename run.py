@@ -3,7 +3,7 @@
 import os
 import requests
 
-srcDir = "/home/student-01-3376cba60dbf/supplier-data/descriptions/"
+srcDir = "/home/student-04-926dcec39a73/supplier-data/descriptions/"
 
 for (dirname, dirpath, filename) in os.walk(srcDir):
     for file in filename:
@@ -22,5 +22,5 @@ for (dirname, dirpath, filename) in os.walk(srcDir):
         temp['weight']=(int(weight_conv.replace('lbs', '')))
         
         print(temp)
-        response = requests.post("http://35.223.107.79/fruits/", json=temp)
+        response = requests.post("http://35.232.230.30/fruits/", json=temp)
         
