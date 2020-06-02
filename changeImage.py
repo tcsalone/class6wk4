@@ -4,8 +4,8 @@ import os
 import sys
 from PIL import Image
 
-srcDir = "/home/student-04-926dcec39a73/supplier-data/images/"
-destDir = "/home/student-04-926dcec39a73/supplier-data/images/"
+srcDir = "/home/student-01-c4b067d66a1f/supplier-data/images/"
+destDir = "/home/student-01-c4b067d66a1f/supplier-data/images/"
 listOfFiles = list()
 
 
