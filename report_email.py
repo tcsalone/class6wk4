@@ -39,10 +39,10 @@ def main(argv):
           temp['weight']=(int(weight_conv.replace('lbs', '')))
           #print(temp)
           for key, value in temp.items():
-             # print("value: ", value)
-             # print("key: ", key)
+              print("value: ", value)
+              print("key: ", key)
               table_data.append((key, value))
-              if(value == "weight"):
+              if(key == "weight"):
                   table_data.append([])
   #print("Table Data: ", table_data)
   reports.generate_report("/tmp/processed.pdf", date2, table_data)
